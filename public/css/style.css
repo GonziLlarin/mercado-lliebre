@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ebebeb;
+}
+body{color:rgba(0,225,0)}
+header {
+    background-color: #EAC926;
+    padding: 5%;
+}
+
+.container-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo {
+    width: 40%;
+    padding: 5px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    width: 40%;
+}
+
+#Search {
+    margin: 5px;
+}
+
+.search p {
+    padding: 5px;
+}
+
+.search input {
+    width: 100%;
+    box-shadow: 1px 1px 2px 2px gray;
+    padding: 5px;
+}
+
+.botsearch {
+    font-size: 13px;
+    padding: 5%;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+li a:hover {
+    color: white;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: rgb(131, 218, 0);
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+footer section p {
+    font-size: 12px;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+main .pyd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+main section {
+    width: 90%;
+}
+
+main section ul li {
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: left;
+    box-shadow: 2px 3px 3px 2px grey;
+}
+
+.product:hover {
+    scale: 1.1;
+}
+
+main section ul li i {
+    padding: 5%;
+    border: 1px solid rgb(116, 194, 0);
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+}
+
+.burger-menu {
+    position: fixed;
+    left: 10px;
+}
+
+.burger-menu i {
+    background-color: rgb(5, 5, 184);
+    border-radius: 17%;
+    padding: 10px;
+    color: white;
+
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    background-color: white;
+}
+
+.title-register {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.form-prim {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 1px 1px 2px 2px grey;
+}
+
+main form label {
+    padding: 5px;
+}
+
+main form input {
+    padding: 5px;
+    margin: 5px;
+    width: 70%;
+    border-bottom: 1px solid blue;
+}
+
+main form input:focus {
+    border: 1px solid blue
+}
+
+.radio-age {
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-age input {
+    width: 15px;
+}
+
+main form button {
+    font-size: 22px;
+    border: 2px solid blue;
+    margin: 15px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+}
+
+main form button:hover {
+    font-size: 25px;
+    background-color: green;
+    border: none;
+    border-radius: 5%;
+}
+
+@media (max-width: 361px) {
+    /* .descripcion {
+        display: none;
+    } */
+
+    nav {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+
+    header {
+        padding: 3%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main section .product {
+        width: 45%;
+    }
+
+    .container-header {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .search {
+        width: 30%;
+    }
+
+    .botsearch {
+        width: 40%;
+        font-size: 17px;
+    }
+
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main section ul li i {
+        width: 15px;
+        scale: 0.5;
+    }
+}
+
+@media (min-width: 1280px) {
+    header {
+        padding: 0px 3% 5px 3%;
+    }
+
+    header nav ul li a {
+        font-size: 17px;
+    }
+
+    .botsearch {
+        font-size: 22px;
+    }
+
+    main section .product {
+        width: 23%;
+    }
+
+    .img-medio {
+        height: 225px;
+        width: 100%;
+    }
+
+    .form-prim {
+        width: 40%;
+        padding: 15px;
+    }
+
+    .form-container {
+        margin: 0px;
+        height: 620px;
+        padding: 15px;
+    }
+}
