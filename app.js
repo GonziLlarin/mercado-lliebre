@@ -1,22 +1,17 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
+const rutasShop = require('./routes/shop');
+const rutasLogin = require('./routes/login');
+const rutasRegister = require('./routes/register');
+const rutasMain = require('./routes/main');
+
 
 app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'))
-});
-app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/register.html'))
-});
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/login.html'))
-});
-app.get('/shop', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/shop.html'))
-});
+app.use('/', rutasMain);
+app.use('/', rutasRegister);
+app.use('/', rutasLogin);
+app.use('/', rutasShop);
 
 const port = process.env.PORT ||3001;
 app.listen(port, () => {

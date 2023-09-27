@@ -1,0 +1,7 @@
+const express = require('express');
+const controlador = require('../controllers/controladorUsuarios');
+const router = express.Router();
+
+router.get('/login', controlador.login);
+
+module.exports = router;

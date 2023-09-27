@@ -1,0 +1,7 @@
+const express = require('express');
+const router = express.Router();
+const controlador = require('../controllers/controladorUsuarios');
+
+router.get('/shop', controlador.shop );
+
+module.exports = router;
